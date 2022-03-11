@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(assets/layout/css/definicoes-fonts.scss);
+
+$texto-pequeno: 12px;
+$texto-medio: 18px;
+$texto-grande: 24px;
+$texto-ultra-grande: 36px;
+
+.xp{
+    font-family: OpenSans-Light;
+    font-size: $texto-pequeno;
+}
+
+.xm{
+    font-size: $texto-medio;
+}
+
+.xg{
+    font-size: $texto-grande;
+}
+
+.xgg{
+    font-size: $texto-ultra-grande;
+}
