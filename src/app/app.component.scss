@@ -1,0 +1,58 @@
+.body-app{
+  padding: 0;
+  background-image: url("../assets/layout/images/programing-3.jpg");
+}
+
+main{
+  // background-image: url("../assets/layout/images/programing-2.jpg");
+  // background-color: #2f9f00;
+  // margin-top: 100px;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px 0 70px 0;
+}
+
+.type-title{
+  line-height:200px;
+}
+
+.sombra-titulo{
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.33);
+}
+
+.tytle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-sobre{
+  line-height: 20px;
+  max-width: 800px;
+}
+
+.div-projetos{
+  margin-top: 30px;
+  border: 1px solid #fff;
+  width: 50%;
+  border-radius:60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-projetos:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: 0.7s all;
+}
