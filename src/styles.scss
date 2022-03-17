@@ -35,12 +35,19 @@ $sistema-leds-theme: mat.define-light-theme((
 
 @import url(assets/layout/css/definicoes-fonts.scss);
 
+$cor-verde: #00ffa8;
+$cor-preta: #262626;
 $xpp: 14px;
-$xp: 18px;
+$xp: 20px;
 $xmm: 32px;
 $xm: 64px;
 $xg: 87px;
 $xgg: 168px;
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
 
 .xpp{
     font-family: OpenSans-SemiBold;
@@ -60,6 +67,16 @@ $xgg: 168px;
 .xm{
     font-family: OpenSans-SemiBold;
     font-size: $xm;
+}
+
+.xmm-spartan{
+  font-family: LeagueSpartan-Bold;
+  font-size: $xmm;
+}
+
+.xp-spartan{
+  font-family: LeagueSpartan-SemiBold;
+  font-size: $xp;
 }
 
 .xg{

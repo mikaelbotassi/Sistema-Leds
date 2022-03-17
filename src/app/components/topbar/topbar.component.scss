@@ -1,5 +1,8 @@
+$cor-verde: #65b145;
+$cor-preta: #262626;
+
 header{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   width: 100%;
   position: fixed;
   right: 0;
@@ -8,7 +11,52 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 50px;
+  transition: 1s all;
+}
+
+.cata-vento{
+  background-image: url(../../../assets/layout/images/logo-leds-colorida.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  // transition: 0.3s all;
+}
+
+img{
+  visibility: visible;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 170px;
+
+  a{
+    text-decoration: none;
+    p{
+      margin: 0 0 0 0;
+      color:white;
+
+    }
+  }
+
+}
+
+.topbar-list-react{
+
+  li{
+    color: $cor-preta;
+    transition: 0.5s all;
+  }
+
+  li:hover{
+    color: $cor-verde;
+  }
 }
 
 ul{
@@ -17,18 +65,14 @@ ul{
   align-items: center;
 }
 
-img{
-  width: 200px;
-}
-
 li{
   display: inline-block;
   align-items:center;
   margin: 15px;
-  color: black;
+  color: white;
 }
 
 li:hover{
-  color: #65b145;
+  color: $cor-verde;
   transition: 0.3s all;
 }

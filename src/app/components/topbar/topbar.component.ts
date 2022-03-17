@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-topbar',
@@ -7,9 +7,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopbarComponent implements OnInit {
 
-  constructor() { }
+  ativo: boolean = false;
+  @ViewChild ('nav', {static: true}) myNav!: ElementRef;
+  @ViewChild ('logoImg', {static: true}) logoImg!: ElementRef;
+  @ViewChild ('logoTxt', {static: true}) logoTxt!: ElementRef;
+  @ViewChild ('listNav', {static: true}) listNav!: ElementRef;
+
+  constructor() {
+   }
 
   ngOnInit(): void {
   }
+
+  @HostListener('window:scroll') onWindowScroll() {
+    if ((window.scrollY > 1.5)){
+      this.ativo = !this.ativo;
+      console.log(this.ativo);
+      this.myNav.nativeElement.style.backgroundColor = 'white';
+      this.logoImg.nativeElement.style.visibility = 'hidden';
+      this.logoTxt.nativeElement.style.color = '#262626';
+      this.listNav.nativeElement.classList.add('topbar-list-react');
+      console.log(this.listNav.nativeElement.children);
+      // this.listNav.nativeElement.children.HTMLCollection.forEach((child: { nativeElement: { style: { color: string; }; }; }) => child.nativeElement.style.color = 'white');
+    } else {
+      this.ativo = !this.ativo;
+      console.log(this.ativo);
+      this.myNav.nativeElement.style.backgroundColor = 'transparent';
+      this.logoImg.nativeElement.style.visibility = 'visible';
+      this.logoTxt.nativeElement.style.color = 'white';
+      this.listNav.nativeElement.classList.remove('topbar-list-react');
+    }
+  }
+
+  // @HostListener('window:scroll') onWindowScroll() {
+  //   if ((window.scrollY > 1.5) || (window.O)){
+  //     this.myNav.nativeElement.classList.toggle('');
+  //   } else {
+  //     this.myNav.nativeElement.style.backgroundColor = 'transparent';
+  //     this.logoImg.nativeElement.style.visibility = 'visible';
+  //   }
+  // }
 
 }

@@ -1,21 +1,14 @@
-<!-- <div class = "topbar">
-  <div class = "frame-nav">
-    <img src="../assets/layout/images/banner_leds_1.png" class = "logo">
-    <div class = "options">
-        <p class="xp">Membros</p>
-        <p class="xp">Coordenadorias</p>
-        <p class = "xp" >Sobre nós</p>
-        <i class="material-icons">account_circle</i>
-    </div>
-  </div>
-</div> -->
-
-<header>
+<header #nav>
   <div class="logo">
-    <img src="../../../assets/layout/images/banner_leds_1.png" class = "img-logo" alt="Logo LEDS">
+    <div class = "cata-vento">
+      <a href = "#"><img src="../../../assets/layout/images/logo-leds.svg" #logoImg></a>
+    </div>
+    <a href = "#"><p class = "xmm-spartan" #logoTxt>LEDS</p></a>
   </div>
 
-  <ul class = "topbar-list xpp">
+  <!-- [ngClass]="{'topbar-list-react':ativo}" -->
+
+  <ul class = "xpp" #listNav>
     <a href="#"><li>Sobre Nós</li></a>
     <a href="#"><li>Laboratórios</li></a>
     <a href="#"><li>Projetos</li></a>
