@@ -1,0 +1,142 @@
+$cor-verde: #65b145;
+$cor-preta: #262626;
+$cor-vermelha: #e5322d;
+$cor-roxa: #553c75;
+
+main{
+  // background-image: url("../assets/layout/images/programing-2.jpg");
+  // background-color: #2f9f00;
+  // margin-top: 100px;
+  padding: 0;
+  background-image: url("../../../../assets/layout/images/programing-4.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px 0 70px 0;
+}
+
+.sombra-titulo{
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.33);
+}
+
+.tytle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.type-sub-tytle{
+
+  cursor: default;
+  .transition-vermelha:hover{
+    font-size: 100px;
+    color:$cor-vermelha;
+  }
+
+  .transition-verde:hover{
+    font-size: 100px;
+    color:$cor-verde;
+  }
+
+  .transition-roxa:hover{
+    font-size: 100px;
+    color: $cor-roxa;
+  }
+
+}
+
+.type-title{
+  line-height:200px;
+  cursor: default;
+  .transition-vermelha:hover{
+    font-size: 180px;
+    color:$cor-vermelha;
+  }
+
+  .transition-verde:hover{
+    font-size: 180px;
+    color:$cor-verde;
+  }
+
+  .transition-roxa:hover{
+    font-size: 180px;
+    color: $cor-roxa;
+  }
+}
+
+.transition-verde{
+  transition: 0.5s all
+}
+
+.transition-vermelha{
+  transition: 0.5s all;
+}
+
+.transition-roxa{
+  transition: 0.5s all;
+}
+
+.tytle-LEDS{
+  transition: 0.5s all;
+}
+
+.tytle-LEDS:hover{
+  cursor: default;
+  font-size: 180px;
+  color: $cor-verde;
+}
+
+.sub-tytle{
+  transition: 0.2s all;
+}
+
+.sub-tytle:hover{
+  cursor: default;
+  font-size: 100px;
+  color:$cor-verde;
+}
+
+.p-sobre{
+  border: none;
+  background-color: white;
+  padding: 20px;
+  color: $cor-preta;
+  line-height: 20px;
+  max-width: 800px;
+  transition: 0.5s all;
+}
+
+.p-sobre:hover{
+  transform: scale(1.1);
+  background-color: $cor-preta;
+  color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.33);
+}
+
+.div-projetos{
+  margin-top: 30px;
+  border: 1px solid white;
+  background-color: $cor-preta;
+  color: white;
+  width: 20%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:0.7s all;
+}
+
+.div-projetos:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: white;
+  color: $cor-preta;
+}
