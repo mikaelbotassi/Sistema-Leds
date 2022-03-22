@@ -4,6 +4,7 @@ $cor-vermelha: #e5322d;
 $cor-roxa: #553c75;
 
 .container-card{
+  cursor:pointer;
   margin: 10px 50px;
   border: none;
   width: 350px;
@@ -55,7 +56,7 @@ $cor-roxa: #553c75;
   backface-visibility: hidden;
 }
 
-.container-card:hover .flipper{
+.flipper-active{
   transform: rotateY(180deg);
 }
 

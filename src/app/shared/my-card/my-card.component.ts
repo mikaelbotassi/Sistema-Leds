@@ -1,5 +1,4 @@
-import { Input } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
+import { ElementRef, Component, OnInit, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-my-card',
@@ -12,11 +11,18 @@ export class MyCardComponent implements OnInit {
   @Input() sub_titulo!:string;
   @Input() descricao!: string;
 
+  @ViewChild('card', {static: true}) card!:ElementRef;
+  @ViewChild('flip', {static: true}) flip!:ElementRef;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  mudaCard(){
+    this.flip.nativeElement.classList.toggle('flipper-active');
+  }
 
 
 }
