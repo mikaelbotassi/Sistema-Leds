@@ -25,7 +25,7 @@ export class TopbarComponent implements OnInit {
       console.log(this.ativo);
       this.myNav.nativeElement.style.backgroundColor = 'white';
       this.logoImg.nativeElement.style.visibility = 'hidden';
-      this.logoTxt.nativeElement.style.color = '#262626';
+      this.logoTxt.nativeElement.style.color = '#212121';
       this.listNav.nativeElement.classList.add('topbar-list-react');
       console.log(this.listNav.nativeElement.children);
       // this.listNav.nativeElement.children.HTMLCollection.forEach((child: { nativeElement: { style: { color: string; }; }; }) => child.nativeElement.style.color = 'white');

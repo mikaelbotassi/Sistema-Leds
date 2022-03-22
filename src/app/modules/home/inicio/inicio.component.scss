@@ -3,10 +3,7 @@ $cor-preta: #262626;
 $cor-vermelha: #e5322d;
 $cor-roxa: #553c75;
 
-main{
-  // background-image: url("../assets/layout/images/programing-2.jpg");
-  // background-color: #2f9f00;
-  // margin-top: 100px;
+.home-background{
   padding: 0;
   background-image: url("../../../../assets/layout/images/programing-4.jpg");
   background-repeat: no-repeat;
@@ -16,7 +13,7 @@ main{
   align-items: center;
 }
 
-aside{
+.sobre-nos{
   display: flex;
   flex-direction: column;
   align-items: center;

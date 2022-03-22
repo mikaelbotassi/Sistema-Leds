@@ -1,11 +1,12 @@
 $cor-verde: #65b145;
-$cor-preta: #262626;
+$cor-preta: #212121;
 
 header{
-  background-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
   width: 100%;
   position: fixed;
-  right: 0;
+  top: 0;
+  left: 0;
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -13,6 +14,7 @@ header{
   align-items: center;
   height: 50px;
   transition: 1s all;
+  z-index: 1000;
 }
 
 .cata-vento{

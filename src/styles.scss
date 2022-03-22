@@ -1,3 +1,7 @@
+$cor-verde: #65b145;
+$cor-preta: #262626;
+$cor-vermelha: #e5322d;
+$cor-roxa: #553c75;
 
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
@@ -35,8 +39,6 @@ $sistema-leds-theme: mat.define-light-theme((
 
 @import url(assets/layout/css/definicoes-fonts.scss);
 
-$cor-verde: #00ffa8;
-$cor-preta: #262626;
 $xpp: 14px;
 $xp: 20px;
 $xmm: 32px;
@@ -52,6 +54,11 @@ body{
 .xpp{
     font-family: OpenSans-SemiBold;
     font-size: $xpp;
+}
+
+.xpp-thin{
+  font-size: $xpp;
+  font-family: Sora-Thin;
 }
 
 .xp{
