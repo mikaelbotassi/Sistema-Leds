@@ -1,15 +1,9 @@
 <div class = "styles-background">
   <div class = "styles-conteudo">
-    <app-my-card
-    titulo="Projeto do Mikael"
-    sub_titulo = "22/03/2022 - 25/03/2022"
-    descricao = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi facilis
-    est harum eius iusto aut odit esse aspernatur repellendus doloremque."></app-my-card>
 
-    <app-my-card
-    titulo="Projeto do Professor de Sistemas de Informação Victório"
-    sub_titulo = "22/03/2022 - Em Andamento"
-    descricao = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi facilis
-    est harum eius iusto aut odit esse aspernatur repellendus doloremque."></app-my-card>
+    <app-my-card *ngFor="let projeto of projetos"
+    titulo = {{projeto.titulo}}
+    sub_titulo = {{projeto.titulo}}
+    descricao = {{projeto.objetivo}}></app-my-card>
   </div>
 </div>
