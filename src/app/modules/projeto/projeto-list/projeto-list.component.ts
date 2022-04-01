@@ -14,10 +14,12 @@ export class ProjetoListComponent implements OnInit {
 
   projetos:ProjetoListModel[] = [];
 
-  constructor(private projetoService: ProjetoService) { }
+  constructor(private projetoService: ProjetoService) {
+  }
 
   ngOnInit(): void {
-    this.listarProjetos();
+    this.projetos = this.listarProjetos();
+    let projeto = this.projetos[1];
   }
 
   // @HostListener('window:scroll') onWindowScroll() {
@@ -28,8 +30,8 @@ export class ProjetoListComponent implements OnInit {
   //   }
   // }
 
-  listarProjetos(){
-    this.projetos = this.projetoService.obterProjetos();
+  listarProjetos():ProjetoListModel[]{
+    return this.projetos = this.projetoService.obterProjetos();
   }
 
 }

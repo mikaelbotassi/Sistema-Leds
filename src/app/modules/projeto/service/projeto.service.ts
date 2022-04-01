@@ -6,14 +6,13 @@ import { Injectable } from '@angular/core';
 })
 export class ProjetoService {
 
-  projetos: ProjetoListModel[] = []
-
   constructor() { }
 
-  obterProjetos(){
+  obterProjetos():ProjetoListModel[]{
+    let projetos: ProjetoListModel[]=[];
     for(let i = 0; i < 11; i++){
-      this.projetos.push(new ProjetoListModel());
+      projetos.push(new ProjetoListModel());
     }
-    return this.projetos
+    return projetos
   }
 }

@@ -1,19 +1,26 @@
 <div class = "container-card" #card (click)="mudaCard()">
   <div class = "flipper" #flip>
     <div class  = "front">
-      <div class = "front-text">
+      <div *ngIf = "coordenador != undefined && coordenador != null" class = "front-text">
         <p class = "tytle xmm">{{titulo}}</p>
-        <p class = "date xpp-thin">{{sub_titulo}}</p>
+        <p class = "date xpp-thin">{{prazo}}</p>
       </div>
     </div>
     <div class="back">
       <div class = "back-conteudo">
-        <div class = "back-text description">
-          <p class = "xpp">
-            {{descricao}}
+        <div *ngIf = "coordenador != undefined && coordenador != null" class = "back-text description">
+          <p class = "xpp-thin">
+            <span style = "font-weight:bold">COORDENADOR:</span> {{coordenador.nome}}<br><br>
+          </p>
+          <p class = "xpp-thin">
+            <span style = "font-weight:bold">OBJETIVO:</span> {{objetivo}}
           </p>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+  <ng-template #userLoggedOut>
+    Por favor, faça o login.
+  </ng-template>

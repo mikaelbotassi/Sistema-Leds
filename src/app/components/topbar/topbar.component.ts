@@ -22,7 +22,6 @@ export class TopbarComponent implements OnInit {
   @HostListener('window:scroll') onWindowScroll() {
     if ((window.scrollY > 1.5)){
       this.ativo = !this.ativo;
-      console.log(this.ativo);
       this.myNav.nativeElement.style.backgroundColor = 'white';
       this.logoImg.nativeElement.style.visibility = 'hidden';
       this.logoTxt.nativeElement.style.color = '#212121';

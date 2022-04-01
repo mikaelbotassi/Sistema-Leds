@@ -1,9 +1,9 @@
 <div class = "styles-background">
   <div class = "styles-conteudo">
-
     <app-my-card *ngFor="let projeto of projetos"
-    titulo = {{projeto.titulo}}
-    sub_titulo = {{projeto.titulo}}
-    descricao = {{projeto.objetivo}}></app-my-card>
+    [titulo] = "projeto.titulo"
+    [prazo] = "projeto.prazo"
+    [coordenador] = "projeto.coordenador"
+    [objetivo] = "projeto.objetivo"></app-my-card>
   </div>
 </div>

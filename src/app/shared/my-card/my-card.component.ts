@@ -1,4 +1,5 @@
 import { ElementRef, Component, OnInit, Input, ViewChild } from '@angular/core';
+import { MembroModel } from 'src/app/modules/membro/models/membroModel';
 
 @Component({
   selector: 'app-my-card',
@@ -8,8 +9,9 @@ import { ElementRef, Component, OnInit, Input, ViewChild } from '@angular/core';
 export class MyCardComponent implements OnInit {
 
   @Input() titulo!:string;
-  @Input() sub_titulo!:string;
-  @Input() descricao!: string;
+  @Input() coordenador!: MembroModel;
+  @Input() prazo!: string;
+  @Input() objetivo!: string;
 
   @ViewChild('card', {static: true}) card!:ElementRef;
   @ViewChild('flip', {static: true}) flip!:ElementRef;
@@ -17,6 +19,7 @@ export class MyCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.coordenador);
   }
 
 
